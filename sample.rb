@@ -7,7 +7,7 @@ require 'active_support/time'
 
 module Clockwork
   handler do |send|
-    notifier = Slack::Notifier.new('https://hooks.slack.com/services/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')
+    notifier = Slack::Notifier.new('https://hooks.slack.com/services/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')
     notifier.ping('mwaramutse')
   end
   every(3.minutes, 'send')
